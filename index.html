@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Landing Page</title>
+    <meta name="viewport" cotent="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+
+  <body>
+    <header id="header">
+      <img id="header-img" src="logo.jpg">
+
+      <nav id="nav-bar">
+        <a class="nav-link" href="#main">About</a>
+        <a class="nav-link" href="#form">Improve</a>
+        <a class="nav-link" href="#footer">Footer</a>
+      </nav>
+      
+    </header>
+
+    <main id="main">
+      <article class="car-article">
+        <p class="car-paragraph"> Ford Mustang is a car manufactured by Ford Motor Company since 1964. At the same time Ford introduced the class of pony car. The Mustang, the third oldest name that is still produced by Ford, has undergone many changes to reach the fifth generation.</p>
+
+        <video class="car-video" id="video" controls>
+           <source src="#" type="video/mp4">
+        </video>
+      </article>
+
+      <article class="feedback-article">
+        <h2>Send us your feedback!</h2>
+
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <fieldset>
+              <label for="email">Enter your email:</label>
+                <input id="email" type="email" name="email" placeholder="example@email.com" required>
+              
+              <label for="feedback">Tell Feedback</label>
+              <textarea id="feedback" name="feedback" rows="10" cols="25" placeholder="Tell us everything you want"></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="send feedback" >
+          </form>
+      </article>
+    </main>
+
+    <footer id="footer">
+      <p>FOOTER 2022 CAR</p>
+    </footer>
+
+  </body>
+</html>

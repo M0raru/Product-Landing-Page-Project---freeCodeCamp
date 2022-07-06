@@ -1,0 +1,178 @@
+*, 
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: georgia, serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+#header {
+  width: 100%;
+  top:0;
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(32, 24, 52);
+}
+
+#header-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: .5em 5%;
+}
+
+#nav-bar {
+  display: flex;
+  position: static;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #EDF1FF;
+  padding-right: 2em;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  font-size: 1.15rem;
+}
+
+#main {
+  width: 80%;
+  margin: 8rem auto 2rem;
+}
+
+.car-paragraph {
+  width: 50%;
+  font-size: 1.1rem;
+}
+
+.car-paragraph::first-letter {
+  color: red;
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  margin-top: -9px;
+}
+
+.car-article {
+  display: flex;
+  align-items: center;
+}
+
+.car-video {
+  z-index: -1;
+  width: 50%;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: .5em;
+}
+
+.feedback-article {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  padding: .5em;
+  font-weight: bold;
+}
+
+input {
+  width: 80%;
+  height: 25px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+textarea {
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+fieldset {
+  border: none;
+}
+
+#form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: rgb(230, 235, 232);
+}
+
+#submit {
+  width: 50%;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: black;
+  color: white;
+}
+
+#footer {
+  width: 100%;
+  background-color: rgb(32, 24, 52);
+  color: #EDF1FF;
+}
+
+#footer  {
+  padding: 1em;
+}
+
+@media (max-width: 700px) {
+  .car-article {
+    flex-direction: column;
+  }
+
+  .car-paragraph {
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .car-video {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #header {
+    flex-direction: column;
+  }
+
+  #nav-bar {
+  flex-direction: column;
+}
+
+.nav-link {
+  text-align: center;
+  padding: .7em;
+}
+
+#main {
+  margin-top: 15rem;
+}
+
+}
